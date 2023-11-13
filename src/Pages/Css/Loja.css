@@ -1,0 +1,30 @@
+
+.mainLoja{
+display: flex;
+flex-direction: column;
+height: 100%;
+min-height: 100vh;
+
+}
+.footerLoja {
+    margin-top: auto;
+}
+.ContainerLoja{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    margin: 3em 0em 0em 0em;
+    height: 100%;
+    min-height: 60vh;
+}
+.boxLoja{
+    border: 1px solid black;
+    border-radius: 1em;
+}
+.imgLoja{
+width: 150px;
+height: 150px;
+}

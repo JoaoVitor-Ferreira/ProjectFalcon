@@ -1,0 +1,30 @@
+@import '../Font/FontMontserrat.css';
+
+.MainQuest {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+    overflow: hidden;
+    height: auto;
+  }
+  
+  .ContainerQuest {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    padding: 1em;
+  }
+  
+  .BoxQuest {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+  }
+  
+  .BoxText {
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }

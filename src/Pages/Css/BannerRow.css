@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px){
+    .ContainerRow{
+        display: flex;
+        justify-content: center;
+    }
+    .ImgRow{
+        width: 90%;
+    }
+}
+.ContainerRow{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 5em;
+  }

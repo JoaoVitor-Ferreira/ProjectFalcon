@@ -1,0 +1,147 @@
+@import '../Font/FontFalcon.css';
+
+.Produto-Page {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+
+  .Container-Superior {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 10em;
+  }
+  
+  .background-box{
+    display: flex;
+    background-color: #b1b5b9bf;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+  .Container-Carrosel { 
+    max-width: 30%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    box-shadow: 0px 7px 15px 8px #00000073;
+    border-radius: 1.2em;
+   }
+  .Nome-Produto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .carousel-fade > .carousel-control-prev{
+    width: auto;
+    max-width: 10%;
+  }
+  .carousel-fade > .carousel-control-next{
+    width: auto;
+    max-width: 10%;
+  }
+  @media screen and (max-width: 768px) {
+    .Container-Superior{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .SubTitulo-Produto{
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .Nome-Produto{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 3em;
+    }
+    .background-box{
+      display: flex;
+      flex-direction: column;
+    }
+    .Container-Carrosel { 
+      max-width: 50%;
+  }
+}
+  @media screen and (max-width: 2000px) {
+    .Container-Carrosel{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .img-fluid{
+    width: auto;
+    height: auto;
+  }
+  .Box-Buttton {
+    margin: 8em 0em 8em 0em;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .link-name{
+    color: white;
+    text-decoration: none;
+  }
+ .Descricao-Produto{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+ }
+ .Texto-Descricao{
+  width: 50%;
+  text-align: left;
+ }
+ .H2-Descricao{
+  text-align: left;
+  margin-top: 1em;
+  margin-bottom:1em; 
+  font-size: 27px;
+ }
+ .First-Text{
+  text-align: justify;
+ }
+ .pSimple{
+  text-align: justify;
+ }
+ .landingpage{
+  max-width: 100%;
+ }
+ .landingpage > img{
+  width: 100%;
+ }
+.LeftContainer{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Container-Carrosel{
+  background-color: white;
+}
+.SubTitulo-Produto{
+  font-size: 20px;
+  font-family: 'FonteLato','sans-serif';
+  color: rgba(0, 0, 0, 0.688);
+}
+.Titulo-Produto{
+  font-family: 'FonteRoboto','sans-serif';
+}
+

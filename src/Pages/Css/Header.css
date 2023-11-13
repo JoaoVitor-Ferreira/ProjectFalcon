@@ -1,0 +1,209 @@
+/* Estilos padrão */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Header */
+.logo {
+  width: 250px;
+  height: 200px;
+ 
+}
+
+/* Header - Container */
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-color: transparent;
+  height: 86px;
+  border-bottom: 2px solid #101829;
+}
+
+/* Header - Navegação */
+.menu{
+  margin-bottom: 0em;
+}
+nav {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  flex-wrap: nowrap;
+  flex-flow: row nowrap;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40em;
+  justify-content: space-around;
+}
+
+/* Links do Menu */
+ul > li{
+  list-style: none;
+}
+.Menu-Link {
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'FonteFalcon';
+}
+
+.Menu-Link:hover {
+  border-bottom: 1px solid #1a324f;
+  cursor: pointer;
+}
+
+/* Ícone de menu */
+.menu-icon {
+  display: none;
+}
+.BoxDarkMode .icon-DarkMode{
+  border:none;
+  width: 50px;
+}
+/* Menu Lateral */
+.menu-lateral {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #f2f2f2;
+  z-index: 999;
+}
+
+.menu-lateral ul {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.menu-lateral li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+.menu-lateral a {
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'FonteFalcon';
+}
+
+/* Mostrar/Ocultar Menu Lateral */
+.menu-lateral {
+  display: none;
+}
+
+.menu-lateral.show {
+  display: block;
+  border: 1px solid #00000040;
+}
+
+.icons-Header.hide {
+  display: none;
+}
+
+.icons-Lateral {
+  margin: 0.5em;
+  margin-top: 5em;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  /* Esconder menu tradicional e exibir ícone de menu */
+  .menu {
+    display: none;
+    width: 0;
+  }
+  .menu-icon {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  .BoxDarkMode {
+    display: none;
+  }
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 768px) {
+  header {
+    height: 120px;
+  }
+  .icons-Header {
+    display: none;
+  }
+  
+}
+
+/*Responsividade links memnu*/
+
+@media screen and (min-width: 768px)  {
+  .Menu-Link{
+    font-size: 15px;
+  }
+  .menu-all{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+}
+
+/* Esconder ícones do menu lateral no header */
+header .icons-Lateral {
+  display: none;
+}
+
+/* Modo claro */
+body.modo-claro {
+  background-color: white;
+  color: black;
+}
+
+.modo-claro {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Modo escuro */
+body.modo-escuro {
+  background-color: #101829;
+  color: white;
+}
+
+.modo-escuro {
+  background-color: #101829;
+  color: #ffffff;
+}
+
+.BtnBox{
+  border: none;
+}
+.BoxIconDarkMode{
+ max-width: 50px;
+}
+.BoxIconDarkMode > .BtnBox > img{
+  width: 50px;
+}
